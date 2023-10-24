@@ -1,8 +1,8 @@
 //
 //  BaseProjectTests.swift
-//  BaseProject
+//  BaseProjectTests
 //
-//  Created by Tyler on 2023-09-05.
+//  Created by Tyler on 2023-10-23.
 //
 
 import XCTest
@@ -27,7 +27,7 @@ final class BaseProjectTests: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }

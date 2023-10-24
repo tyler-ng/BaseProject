@@ -10,7 +10,7 @@ import Foundation
 protocol RequestManagerProtocol {
   var apiManager: APIManagerProtocol { get }
   var parser: DataParserProtocol { get }
-  func perform<T: Decodable>(with data: RequestProtocol) async throws -> T
+  func perform<T: Decodable>(_ request: RequestProtocol) async throws -> T
 }
 
 
@@ -39,9 +39,9 @@ class RequestManager: RequestManagerProtocol {
     return token.bearerAccessToken
   }
 
-  func perform<T: Decodable>(with data: RequestProtocol) async throws -> T {
+  func perform<T: Decodable>(_ request: RequestProtocol) async throws -> T {
     let authToken = try await requestAccessToken()
-    let data = try await apiManager.perform(with: data, authToken: authToken)
+    let data = try await apiManager.perform(request, authToken: authToken)
     let decoded: T = try parser.parse(data: data)
     return decoded
   }
