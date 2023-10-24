@@ -10,37 +10,39 @@ import Foundation
 protocol RequestManagerProtocol {
   var apiManager: APIManagerProtocol { get }
   var parser: DataParserProtocol { get }
-  func initRequest<T: Decodable>(with data: RequestProtocol) async throws -> T
+  func perform<T: Decodable>(with data: RequestProtocol) async throws -> T
 }
 
 
 class RequestManager: RequestManagerProtocol {
   let apiManager: APIManagerProtocol
+  let parser: DataParserProtocol
+  let accessTokenManager: AccessTokenManagerProtocol
 
   init(
-    apiManager: APIManagerProtocol = APIManager()
+    apiManager: APIManagerProtocol = APIManager(),
+    parser: DataParserProtocol = DataParser(),
+    accessTokenManager: AccessTokenManagerProtocol = AccessTokenManager()
   ) {
     self.apiManager = apiManager
+    self.parser = parser
+    self.accessTokenManager = accessTokenManager
   }
 
   func requestAccessToken() async throws -> String {
-
-    let data = try await apiManager.initRequest(with: AuthTokenRequest.auth, authToken: "")
+    if accessTokenManager.isTokenValid() {
+      return accessTokenManager.fetchToken()
+    }
+    let data = try await apiManager.requestToken()
     let token: APIToken = try parser.parse(data: data)
+    try accessTokenManager.refreshWith(apiToken: token)
     return token.bearerAccessToken
   }
 
-  func initRequest<T: Decodable>(with data: RequestProtocol) async throws -> T {
+  func perform<T: Decodable>(with data: RequestProtocol) async throws -> T {
     let authToken = try await requestAccessToken()
-    let data = try await apiManager.initRequest(with: data, authToken: authToken)
+    let data = try await apiManager.perform(with: data, authToken: authToken)
     let decoded: T = try parser.parse(data: data)
     return decoded
-  }
-}
-
-// MARK: - Returns Data Parser
-extension RequestManagerProtocol {
-  var parser: DataParserProtocol {
-    return DataParser()
   }
 }
