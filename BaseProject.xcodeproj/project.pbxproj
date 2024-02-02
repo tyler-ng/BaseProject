@@ -26,6 +26,10 @@
 		2F60CD212A635CAD00B70ED1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F60CD202A635CAD00B70ED1 /* User.swift */; };
 		2F60CD232A635D7200B70ED1 /* AnimalsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F60CD222A635D7200B70ED1 /* AnimalsMock.swift */; };
 		2F60CD262A635FB300B70ED1 /* AnimalsMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F60CD252A635FB300B70ED1 /* AnimalsMock.json */; };
+		2F6A4B182B6CD07A00050198 /* APIManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6A4B172B6CD07A00050198 /* APIManagerMock.swift */; };
+		2F6A4B1B2B6CD16D00050198 /* AccessTokenTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6A4B1A2B6CD16D00050198 /* AccessTokenTestHelper.swift */; };
+		2F6A4B1D2B6CD2D500050198 /* AnimalsRequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6A4B1C2B6CD2D500050198 /* AnimalsRequestMock.swift */; };
+		2F6A4B1F2B6CD37600050198 /* RequestManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6A4B1E2B6CD37600050198 /* RequestManagerTest.swift */; };
 		2F7321472A4A1604007F36E0 /* BaseProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7321462A4A1604007F36E0 /* BaseProjectApp.swift */; };
 		2F7321492A4A1604007F36E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7321482A4A1604007F36E0 /* ContentView.swift */; };
 		2F73214B2A4A1605007F36E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F73214A2A4A1605007F36E0 /* Assets.xcassets */; };
@@ -43,10 +47,6 @@
 		2F7321782A4A36B7007F36E0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7321772A4A36B7007F36E0 /* APIManager.swift */; };
 		2FE1C4E32A7E185C00382A53 /* AnimalsNearYouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE1C4E22A7E185C00382A53 /* AnimalsNearYouView.swift */; };
 		2FE485382AE7952500101EF0 /* BaseProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE485372AE7952500101EF0 /* BaseProjectTests.swift */; };
-		2FE485452AE79DD300101EF0 /* APIManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE485442AE79DD300101EF0 /* APIManagerMock.swift */; };
-		2FE485472AE79EB200101EF0 /* AccessTokenTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE485462AE79EB200101EF0 /* AccessTokenTestHelper.swift */; };
-		2FE485492AE7A03D00101EF0 /* AnimalsRequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE485482AE7A03D00101EF0 /* AnimalsRequestMock.swift */; };
-		2FE4854B2AE7A1EB00101EF0 /* RequestManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE4854A2AE7A1EB00101EF0 /* RequestManagerTests.swift */; };
 		2FF291432AA794EE0002176B /* AnimalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF291422AA794EE0002176B /* AnimalRow.swift */; };
 		2FF291462AA7B2180002176B /* AccessTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF291452AA7B2180002176B /* AccessTokenManager.swift */; };
 /* End PBXBuildFile section */
@@ -81,6 +81,10 @@
 		2F60CD202A635CAD00B70ED1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2F60CD222A635D7200B70ED1 /* AnimalsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsMock.swift; sourceTree = "<group>"; };
 		2F60CD252A635FB300B70ED1 /* AnimalsMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AnimalsMock.json; sourceTree = "<group>"; };
+		2F6A4B172B6CD07A00050198 /* APIManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerMock.swift; sourceTree = "<group>"; };
+		2F6A4B1A2B6CD16D00050198 /* AccessTokenTestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenTestHelper.swift; sourceTree = "<group>"; };
+		2F6A4B1C2B6CD2D500050198 /* AnimalsRequestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsRequestMock.swift; sourceTree = "<group>"; };
+		2F6A4B1E2B6CD37600050198 /* RequestManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManagerTest.swift; sourceTree = "<group>"; };
 		2F7321432A4A1604007F36E0 /* BaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7321462A4A1604007F36E0 /* BaseProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectApp.swift; sourceTree = "<group>"; };
 		2F7321482A4A1604007F36E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,10 +104,6 @@
 		2FE1C4E22A7E185C00382A53 /* AnimalsNearYouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsNearYouView.swift; sourceTree = "<group>"; };
 		2FE485352AE7952500101EF0 /* BaseProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE485372AE7952500101EF0 /* BaseProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectTests.swift; sourceTree = "<group>"; };
-		2FE485442AE79DD300101EF0 /* APIManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIManagerMock.swift; path = ../../../../../../../../../Documents/APIManagerMock.swift; sourceTree = "<group>"; };
-		2FE485462AE79EB200101EF0 /* AccessTokenTestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccessTokenTestHelper.swift; path = ../../../../../../../../../Documents/AccessTokenTestHelper.swift; sourceTree = "<group>"; };
-		2FE485482AE7A03D00101EF0 /* AnimalsRequestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimalsRequestMock.swift; path = ../../../../../../../../../Documents/AnimalsRequestMock.swift; sourceTree = "<group>"; };
-		2FE4854A2AE7A1EB00101EF0 /* RequestManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RequestManagerTests.swift; path = ../../../../../../../../Documents/RequestManagerTests.swift; sourceTree = "<group>"; };
 		2FF291422AA794EE0002176B /* AnimalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalRow.swift; sourceTree = "<group>"; };
 		2FF291452AA7B2180002176B /* AccessTokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,6 +181,57 @@
 				2F60CD202A635CAD00B70ED1 /* User.swift */,
 			);
 			path = user;
+			sourceTree = "<group>";
+		};
+		2F6A4B122B6CD04300050198 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2F6A4B132B6CD04D00050198 /* Core */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		2F6A4B132B6CD04D00050198 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2F6A4B142B6CD05800050198 /* data */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2F6A4B142B6CD05800050198 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				2F6A4B152B6CD06000050198 /* api */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		2F6A4B152B6CD06000050198 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				2F6A4B192B6CD14E00050198 /* helper */,
+				2F6A4B162B6CD06700050198 /* mock */,
+				2F6A4B1E2B6CD37600050198 /* RequestManagerTest.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		2F6A4B162B6CD06700050198 /* mock */ = {
+			isa = PBXGroup;
+			children = (
+				2F6A4B172B6CD07A00050198 /* APIManagerMock.swift */,
+				2F6A4B1C2B6CD2D500050198 /* AnimalsRequestMock.swift */,
+			);
+			path = mock;
+			sourceTree = "<group>";
+		};
+		2F6A4B192B6CD14E00050198 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				2F6A4B1A2B6CD16D00050198 /* AccessTokenTestHelper.swift */,
+			);
+			path = helper;
 			sourceTree = "<group>";
 		};
 		2F73213A2A4A1604007F36E0 = {
@@ -351,61 +402,10 @@
 		2FE485362AE7952500101EF0 /* BaseProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				2FE4853E2AE79D6700101EF0 /* Tests */,
+				2F6A4B122B6CD04300050198 /* Tests */,
 				2FE485372AE7952500101EF0 /* BaseProjectTests.swift */,
 			);
 			path = BaseProjectTests;
-			sourceTree = "<group>";
-		};
-		2FE4853E2AE79D6700101EF0 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				2FE4853F2AE79D7B00101EF0 /* Core */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		2FE4853F2AE79D7B00101EF0 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				2FE485402AE79D8500101EF0 /* data */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		2FE485402AE79D8500101EF0 /* data */ = {
-			isa = PBXGroup;
-			children = (
-				2FE485412AE79D8D00101EF0 /* api */,
-			);
-			path = data;
-			sourceTree = "<group>";
-		};
-		2FE485412AE79D8D00101EF0 /* api */ = {
-			isa = PBXGroup;
-			children = (
-				2FE485432AE79DAD00101EF0 /* helper */,
-				2FE485422AE79D9400101EF0 /* mock */,
-				2FE4854A2AE7A1EB00101EF0 /* RequestManagerTests.swift */,
-			);
-			path = api;
-			sourceTree = "<group>";
-		};
-		2FE485422AE79D9400101EF0 /* mock */ = {
-			isa = PBXGroup;
-			children = (
-				2FE485442AE79DD300101EF0 /* APIManagerMock.swift */,
-				2FE485482AE7A03D00101EF0 /* AnimalsRequestMock.swift */,
-			);
-			path = mock;
-			sourceTree = "<group>";
-		};
-		2FE485432AE79DAD00101EF0 /* helper */ = {
-			isa = PBXGroup;
-			children = (
-				2FE485462AE79EB200101EF0 /* AccessTokenTestHelper.swift */,
-			);
-			path = helper;
 			sourceTree = "<group>";
 		};
 		2FF291442AA7B1FD0002176B /* token */ = {
@@ -558,11 +558,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FE485472AE79EB200101EF0 /* AccessTokenTestHelper.swift in Sources */,
-				2FE4854B2AE7A1EB00101EF0 /* RequestManagerTests.swift in Sources */,
-				2FE485452AE79DD300101EF0 /* APIManagerMock.swift in Sources */,
+				2F6A4B1B2B6CD16D00050198 /* AccessTokenTestHelper.swift in Sources */,
+				2F6A4B182B6CD07A00050198 /* APIManagerMock.swift in Sources */,
+				2F6A4B1F2B6CD37600050198 /* RequestManagerTest.swift in Sources */,
 				2FE485382AE7952500101EF0 /* BaseProjectTests.swift in Sources */,
-				2FE485492AE7A03D00101EF0 /* AnimalsRequestMock.swift in Sources */,
+				2F6A4B1D2B6CD2D500050198 /* AnimalsRequestMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
