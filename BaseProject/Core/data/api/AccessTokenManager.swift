@@ -40,11 +40,11 @@ extension AccessTokenManager: AccessTokenManagerProtocol {
   
   func refreshWith(apiToken: APIToken) throws {
     let expiresAt = apiToken.expiresAt
-    let accessToken = apiToken.accessToken
+    let token = apiToken.bearerAccessToken
     
     save(token: apiToken)
     self.expiresAt = expiresAt
-    self.accessToken = accessToken
+    self.accessToken = token
   }
 }
 

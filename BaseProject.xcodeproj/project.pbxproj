@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F4B84472BC215D20047ABDD /* AccessTokenManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4B84462BC215D20047ABDD /* AccessTokenManagerTests.swift */; };
 		2F60CCFD2A635C5E00B70ED1 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F60CCFC2A635C5E00B70ED1 /* Details.swift */; };
 		2F60CD0D2A635C7500B70ED1 /* Coat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F60CCFE2A635C7400B70ED1 /* Coat.swift */; };
 		2F60CD0E2A635C7500B70ED1 /* AnimalEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F60CCFF2A635C7400B70ED1 /* AnimalEnvironment.swift */; };
@@ -62,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F4B84462BC215D20047ABDD /* AccessTokenManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenManagerTests.swift; sourceTree = "<group>"; };
 		2F60CCFC2A635C5E00B70ED1 /* Details.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
 		2F60CCFE2A635C7400B70ED1 /* Coat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coat.swift; sourceTree = "<group>"; };
 		2F60CCFF2A635C7400B70ED1 /* AnimalEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalEnvironment.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				2F6A4B192B6CD14E00050198 /* helper */,
 				2F6A4B162B6CD06700050198 /* mock */,
 				2F6A4B1E2B6CD37600050198 /* RequestManagerTest.swift */,
+				2F4B84462BC215D20047ABDD /* AccessTokenManagerTests.swift */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -559,6 +562,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F6A4B1B2B6CD16D00050198 /* AccessTokenTestHelper.swift in Sources */,
+				2F4B84472BC215D20047ABDD /* AccessTokenManagerTests.swift in Sources */,
 				2F6A4B182B6CD07A00050198 /* APIManagerMock.swift in Sources */,
 				2F6A4B1F2B6CD37600050198 /* RequestManagerTest.swift in Sources */,
 				2FE485382AE7952500101EF0 /* BaseProjectTests.swift in Sources */,
