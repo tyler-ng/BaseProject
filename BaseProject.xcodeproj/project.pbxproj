@@ -46,6 +46,8 @@
 		2F7321742A4A302F007F36E0 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7321732A4A302F007F36E0 /* DataParser.swift */; };
 		2F7321762A4A369F007F36E0 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7321752A4A369F007F36E0 /* RequestManager.swift */; };
 		2F7321782A4A36B7007F36E0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7321772A4A36B7007F36E0 /* APIManager.swift */; };
+		2FC732572BFAB86D00AC251C /* PetSave.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2FC732552BFAB86D00AC251C /* PetSave.xcdatamodeld */; };
+		2FC7325A2BFACE4C00AC251C /* Animal+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC732592BFACE4C00AC251C /* Animal+CoreData.swift */; };
 		2FE1C4E32A7E185C00382A53 /* AnimalsNearYouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE1C4E22A7E185C00382A53 /* AnimalsNearYouView.swift */; };
 		2FE485382AE7952500101EF0 /* BaseProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE485372AE7952500101EF0 /* BaseProjectTests.swift */; };
 		2FF291432AA794EE0002176B /* AnimalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF291422AA794EE0002176B /* AnimalRow.swift */; };
@@ -103,6 +105,8 @@
 		2F7321732A4A302F007F36E0 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
 		2F7321752A4A369F007F36E0 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		2F7321772A4A36B7007F36E0 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		2FC732562BFAB86D00AC251C /* PetSave.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetSave.xcdatamodel; sourceTree = "<group>"; };
+		2FC732592BFACE4C00AC251C /* Animal+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animal+CoreData.swift"; sourceTree = "<group>"; };
 		2FE1C4E22A7E185C00382A53 /* AnimalsNearYouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsNearYouView.swift; sourceTree = "<group>"; };
 		2FE485352AE7952500101EF0 /* BaseProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE485372AE7952500101EF0 /* BaseProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectTests.swift; sourceTree = "<group>"; };
@@ -306,18 +310,11 @@
 		2F7321572A4A161E007F36E0 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				2FC732542BFAB82300AC251C /* coreData */,
 				2F7321592A4A162C007F36E0 /* api */,
 				2F73215E2A4A164F007F36E0 /* APIConstants.swift */,
-				2F7321582A4A1627007F36E0 /* coreData */,
 			);
 			path = data;
-			sourceTree = "<group>";
-		};
-		2F7321582A4A1627007F36E0 /* coreData */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = coreData;
 			sourceTree = "<group>";
 		};
 		2F7321592A4A162C007F36E0 /* api */ = {
@@ -383,6 +380,23 @@
 				2F7321732A4A302F007F36E0 /* DataParser.swift */,
 			);
 			path = parser;
+			sourceTree = "<group>";
+		};
+		2FC732542BFAB82300AC251C /* coreData */ = {
+			isa = PBXGroup;
+			children = (
+				2FC732582BFACE3B00AC251C /* extensions */,
+				2FC732552BFAB86D00AC251C /* PetSave.xcdatamodeld */,
+			);
+			path = coreData;
+			sourceTree = "<group>";
+		};
+		2FC732582BFACE3B00AC251C /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2FC732592BFACE4C00AC251C /* Animal+CoreData.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 		2FE1C4E02A7E181400382A53 /* AnimalsNearYou */ = {
@@ -465,7 +479,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					2F7321422A4A1604007F36E0 = {
 						CreatedOnToolsVersion = 14.2;
@@ -529,12 +543,14 @@
 				2F60CD112A635C7500B70ED1 /* Age.swift in Sources */,
 				2F7321742A4A302F007F36E0 /* DataParser.swift in Sources */,
 				2F60CD0D2A635C7500B70ED1 /* Coat.swift in Sources */,
+				2FC732572BFAB86D00AC251C /* PetSave.xcdatamodeld in Sources */,
 				2F73216E2A4A2E21007F36E0 /* AppUserDefaultsKeys.swift in Sources */,
 				2F7321662A4A1B2A007F36E0 /* NetworkError.swift in Sources */,
 				2F60CD192A635C7500B70ED1 /* AnimalAttributes.swift in Sources */,
 				2F60CD1B2A635C7500B70ED1 /* Size.swift in Sources */,
 				2F60CCFD2A635C5E00B70ED1 /* Details.swift in Sources */,
 				2F7321782A4A36B7007F36E0 /* APIManager.swift in Sources */,
+				2FC7325A2BFACE4C00AC251C /* Animal+CoreData.swift in Sources */,
 				2F60CD142A635C7500B70ED1 /* Breed.swift in Sources */,
 				2F60CD162A635C7500B70ED1 /* Gender.swift in Sources */,
 				2F60CD0E2A635C7500B70ED1 /* AnimalEnvironment.swift in Sources */,
@@ -617,6 +633,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -632,6 +649,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = NO;
+				MOMC_SUPPRESS_INVERSE_TRANSIENT_ERROR = NO;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -677,6 +696,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -686,6 +706,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = NO;
+				MOMC_SUPPRESS_INVERSE_TRANSIENT_ERROR = NO;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -711,6 +733,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -718,9 +741,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tynguyen.example.BaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -740,6 +767,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -747,9 +775,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tynguyen.example.BaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -820,6 +852,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2FC732552BFAB86D00AC251C /* PetSave.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2FC732562BFAB86D00AC251C /* PetSave.xcdatamodel */,
+			);
+			currentVersion = 2FC732562BFAB86D00AC251C /* PetSave.xcdatamodel */;
+			path = PetSave.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2F73213B2A4A1604007F36E0 /* Project object */;
 }
