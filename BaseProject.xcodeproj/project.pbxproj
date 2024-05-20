@@ -52,6 +52,8 @@
 		2FE485382AE7952500101EF0 /* BaseProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE485372AE7952500101EF0 /* BaseProjectTests.swift */; };
 		2FF291432AA794EE0002176B /* AnimalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF291422AA794EE0002176B /* AnimalRow.swift */; };
 		2FF291462AA7B2180002176B /* AccessTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF291452AA7B2180002176B /* AccessTokenManager.swift */; };
+		2FF8B5352BFAD73E00BD764C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF8B5342BFAD73E00BD764C /* Persistence.swift */; };
+		2FF8B5372BFADD7200BD764C /* CoreDataPesistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF8B5362BFADD7200BD764C /* CoreDataPesistable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +114,8 @@
 		2FE485372AE7952500101EF0 /* BaseProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectTests.swift; sourceTree = "<group>"; };
 		2FF291422AA794EE0002176B /* AnimalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalRow.swift; sourceTree = "<group>"; };
 		2FF291452AA7B2180002176B /* AccessTokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenManager.swift; sourceTree = "<group>"; };
+		2FF8B5342BFAD73E00BD764C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		2FF8B5362BFADD7200BD764C /* CoreDataPesistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPesistable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -387,6 +391,7 @@
 			children = (
 				2FC732582BFACE3B00AC251C /* extensions */,
 				2FC732552BFAB86D00AC251C /* PetSave.xcdatamodeld */,
+				2FF8B5342BFAD73E00BD764C /* Persistence.swift */,
 			);
 			path = coreData;
 			sourceTree = "<group>";
@@ -395,6 +400,7 @@
 			isa = PBXGroup;
 			children = (
 				2FC732592BFACE4C00AC251C /* Animal+CoreData.swift */,
+				2FF8B5362BFADD7200BD764C /* CoreDataPesistable.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -548,7 +554,9 @@
 				2F7321662A4A1B2A007F36E0 /* NetworkError.swift in Sources */,
 				2F60CD192A635C7500B70ED1 /* AnimalAttributes.swift in Sources */,
 				2F60CD1B2A635C7500B70ED1 /* Size.swift in Sources */,
+				2FF8B5352BFAD73E00BD764C /* Persistence.swift in Sources */,
 				2F60CCFD2A635C5E00B70ED1 /* Details.swift in Sources */,
+				2FF8B5372BFADD7200BD764C /* CoreDataPesistable.swift in Sources */,
 				2F7321782A4A36B7007F36E0 /* APIManager.swift in Sources */,
 				2FC7325A2BFACE4C00AC251C /* Animal+CoreData.swift in Sources */,
 				2F60CD142A635C7500B70ED1 /* Breed.swift in Sources */,
